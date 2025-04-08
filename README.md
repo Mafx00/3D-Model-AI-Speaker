@@ -1,4 +1,4 @@
-## Quick walkthrough of the App
+## App Walkthrough
 
 [![Watch the demo](http://img.youtube.com/vi/3uQ3fFrEnnI/0.jpg)](https://youtu.be/3uQ3fFrEnnI)
 
