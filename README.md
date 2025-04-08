@@ -82,7 +82,7 @@ The AI's response is processed, and if it's a textual message, it appears direct
 
 ## Known issues and suggestions for improvements
 
-**It is not always clear what actions users can perform within the application. This can lead to confusion and a poor user experience.
-**Chatbot's timed tips and suggestions should appear in a separate UI and not in the chat.
-**A future improvement could involve directly implementing Firebase for database management instead of relying on Buildship's collection system. Unity Scripts and a Buildship flow have been done to show some of this functionality
-**Currently, function calls to OpenAI are immediately acknowledged as successful without waiting for actual execution and confirmation from Unity.
+* It is not always clear what actions users can perform within the application. This can lead to confusion and a poor user experience.
+* Chatbot's timed tips and suggestions should appear in a separate UI and not in the chat.
+* A future improvement could involve directly implementing Firebase for database management instead of relying on Buildship's collection system. Unity Scripts and a Buildship flow have been done to show some of this functionality
+* Currently, function calls to OpenAI are immediately acknowledged as successful without waiting for actual execution and confirmation from Unity.
