@@ -22,7 +22,7 @@ public class RotateWithMouseInput : MonoBehaviour
         if(!isEnabled)
             return;
     
-        if (Input.GetMouseButtonDown(0) && !IsMouseOverUILayer())
+        if (Input.GetMouseButtonDown(0) && IsMouseOverObject())
         {
             isDragging = true;
             lastMousePosition = Input.mousePosition;
@@ -45,6 +45,7 @@ public class RotateWithMouseInput : MonoBehaviour
 
             lastMousePosition = Input.mousePosition;
         }
+
     }
 
     private bool IsMouseOverObject()
@@ -80,11 +81,12 @@ private bool IsMouseOverUILayer()
 
         if (Physics.Raycast(ray, out hit))
         {
-            if (((1 << hit.collider.gameObject.layer) & uiBlockerLayer) != 0)
+            if (hit.collider.gameObject.layer == uiBlockerLayer)
             {
                 return true;
             }
         }
         return false;
     }
+
 }
