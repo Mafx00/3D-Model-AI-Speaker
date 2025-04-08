@@ -14,7 +14,7 @@ public class AudioRecorder : MonoBehaviour
     private float lastSoundTime = 0f;
     private string filePath;
     public TextMeshProUGUI output_text;
-    private const string OPENAI_API_KEY = "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";
+    public string api_k;
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class AudioRecorder : MonoBehaviour
         }
         recordButton.onClick.AddListener(() => {
             ToggleRecording();
-            PlaySoundEffect(); // Play sound when the button is pressed
+            PlaySoundEffect();
         });
     }
     void Update()
@@ -85,7 +85,7 @@ public class AudioRecorder : MonoBehaviour
         form.AddBinaryData("file", audioData, Path.GetFileName(path), "audio/wav");
         form.AddField("model", "whisper-1");
         UnityWebRequest www = UnityWebRequest.Post("https://api.openai.com/v1/audio/transcriptions", form);
-        www.SetRequestHeader("Authorization", "Bearer " + OPENAI_API_KEY);
+        www.SetRequestHeader("Authorization", "Bearer " + api_k);
         yield return www.SendWebRequest();
         if (www.result != UnityWebRequest.Result.Success)
         {
