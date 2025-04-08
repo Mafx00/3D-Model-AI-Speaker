@@ -1,3 +1,6 @@
+## Quick walkthrough of the App
+
+[![Watch the demo](http://img.youtube.com/vi/3uQ3fFrEnnI/0.jpg)](https://youtu.be/3uQ3fFrEnnI)
 
 ## Overview of the system architecture
 
