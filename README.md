@@ -87,3 +87,4 @@ The AI's response is processed, and if it's a textual message, it appears direct
 * A future improvement could involve directly implementing Firebase for database management instead of relying on Buildship's collection system. Unity Scripts and a Buildship flow have been done to show some of this functionality
 * Currently, function calls to OpenAI are immediately acknowledged as successful without waiting for actual execution and confirmation from Unity.
 * Must hide api key for OpenAI Whisper
+* The times tips should have a timeout, at the moment they run continuosly in the background until the app is shut down
