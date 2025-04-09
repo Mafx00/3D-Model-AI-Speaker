@@ -88,3 +88,4 @@ The AI's response is processed, and if it's a textual message, it appears direct
 * Currently, function calls to OpenAI are immediately acknowledged as successful without waiting for actual execution and confirmation from Unity.
 * Must hide api key for OpenAI Whisper
 * The times tips should have a timeout, at the moment they run continuosly in the background until the app is shut down
+* Microphone input not connecting to app on webGL (editor and .exe work great)
